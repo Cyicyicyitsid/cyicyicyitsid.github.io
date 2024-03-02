@@ -1,0 +1,109 @@
+@import url(kitagawa.css);
+
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+
+body {
+	font-family: Michroma, serif;
+	background: #ffffff url(https://webcode.tools/img/ottawa.jpg) center center/cover no-repeat;
+}
+
+.nav-link {
+	color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link.active {
+	color: rgb(160, 149, 209);
+}
+
+/* то, что выше - это все для того, чтобы сделать активную ссылку другим цветом */
+
+.navbar-brand img {
+	width: 50px;
+}
+
+.navbar-toggler {
+	background-color: aliceblue;
+}
+
+.sidebar {
+	color: rgb(192, 190, 190);
+	background-color: #242525;
+}
+
+.card a {
+	text-decoration: none;
+	color: black;
+}
+
+.slide-text,
+.footer-text {
+	color: rgb(255, 255, 255);
+	margin: auto auto;
+}
+
+.call-anim {
+	animation: myAnim 2s ease 80ms infinite normal forwards;
+}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
+
+
+@media (max-width: 755px) {
+	.carousel-indicators {
+		display: none;
+	}
+}
+
+footer {
+	background-color: #272626;
+}
+
+.footer-text>p {
+	font-size: 15px;
+}
+
+.media-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.phone {
+	color: aliceblue;
+}
+
+.btn-outline-primary {
+	background-color: aliceblue;
+}
+
+.Help {
+	color: aliceblue;
+}
+
+
